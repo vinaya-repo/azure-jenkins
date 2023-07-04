@@ -20,7 +20,7 @@ node {
   
     stage('deploy') {
       def resourceGroup = 'azurejenkins'
-      def webAppName = 'azurejenkinsworkshop'
+      def webAppName = 'azurejenkinsworkshop1'
       // login Azure
       withCredentials([azureServicePrincipal(credentialsId: 'azure-jenkins-wrk', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
